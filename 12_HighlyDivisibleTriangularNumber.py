@@ -16,8 +16,10 @@ def sumOfNum(x):
 i = 1
 while True:
 	n = sumOfNum(i)
-	if numOfDiv(n) >= 500:
-		print n
+	nod = numOfDiv(n)
+	print n
+	if nod >= 500:
+		print "BOI", n
 		print i
 		break
 	i += 1
