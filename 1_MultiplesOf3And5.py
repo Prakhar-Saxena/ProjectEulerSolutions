@@ -14,7 +14,7 @@ def mof(x):
 
 lst = []
 
-for i in range(0,100):
+for i in range(0,1000):
 	if (mot(i)) or (mof(i)) :
 		lst.append(i)
 
