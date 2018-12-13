@@ -14,3 +14,4 @@ while numOfDigits(fib) != 1000:
 	n = temp
 
 print fib
+print numOfDigits(fib)
