@@ -27,9 +27,9 @@ num = 999*999
 ans = 0
 
 for i in range(num, 100000, -1):
-	if isPalindrome(i) and isPerfectSquare(i):
+	if isPalindrome(i):
 		ans = i
 		break
 
 print ans
-print math.sqrt(ans)
+

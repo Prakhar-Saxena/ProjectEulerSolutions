@@ -15,10 +15,11 @@ def isFactor(n, x):
 
 n = 600851475143
 
-lp = 1
+lp = 2
 
-for i in range(2, int(n/2) + 1):
-	if i > lp and isPrime(i) and isFactor(n, i):
+for i in range(int(n/2)+1, 2, -1):
+	if isFactor(n, i) and isPrime(i):
 		lp = i
+		break;
 
 print lp
