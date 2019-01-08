@@ -16,3 +16,9 @@ for x in range(100000):
 		arr.append('T')	
 
 print arr
+
+i = 0
+
+lst = []
+while i < arr.len():
+	

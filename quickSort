@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#This is amazing way to write the quick sort method.
+#This is an amazing way to write the quick sort method.
 
 def quickSort(arr):
 	if len(arr) <= 1:
