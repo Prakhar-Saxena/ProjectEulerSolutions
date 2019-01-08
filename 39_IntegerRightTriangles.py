@@ -24,7 +24,8 @@ def PTriplets(p):
 max = 1
 ansP = 0
 
-for p in range(0, 1000):
+for p in range(200, 1000):
+	print p
 	length = len(PTriplets(p))
 	if length > max:
 		max = length
