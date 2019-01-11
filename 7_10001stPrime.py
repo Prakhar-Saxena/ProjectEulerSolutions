@@ -3,26 +3,32 @@
 import math
 
 def isPrime(number):
-      if number < 2:
-            return False
-      if number % 2 == 0:
-            return False
-      else:
-            for i in range(3, number):
-                  if not number % i:
-                        return False
-            return True 
-
-
+	if number < 2:
+		return False
+	
+	if number == 2:
+		return True
+	
+	if number % 2 == 0:
+		return False
+	
+	max = (number**0.5) + 1
+	
+	i = 3
+	while i <= max:
+		if number % i == 0:
+			return False
+		i += 2
+	return True
+	
 n = 10001
 
 primes = []
 i=0
-while True:
+while len(primes) <= 10001:
 	if isPrime(i):
 		primes.append(i)
-	if len(primes) == n:
-		break
 	i += 1
 
 print("10001st prime number is: " + str(primes[n-1]))
+
