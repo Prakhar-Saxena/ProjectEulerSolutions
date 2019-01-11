@@ -9,16 +9,15 @@ def add(lst):
 		sum += i
 	return sum
 
-arr = range(1,100)
+arr = range(1,101)
 
 arrSq = []
 
 for i in arr:
 	arrSq.append(square(i))
-
-sum = add(arr)
+print arrSq
+sum = (101*50)*(101*50)
 
 sumSq = add(arrSq)
 
-print "sum: ", sum, " ; sumSq: ", sumSq
-print "difference: ", sumSq - sum
+print "difference: ", sum - sumSq
