@@ -5,9 +5,10 @@ def isFactor(n, x):
 		return True
 	else:
 		return False
-i = 2520
+i = 232792555
 
 while True:
+	print i
 	factorCount = 0
 	for j in range(1, 21):
 		if isFactor(i, j):
