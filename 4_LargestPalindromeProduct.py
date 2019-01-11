@@ -26,10 +26,11 @@ num = 999*999
 
 ans = 0
 
-for i in range(num, 100000, -1):
-	if isPalindrome(i):
-		ans = i
-		break
+l = []
 
-print ans
+for i in range(999,100, -1):
+	for j in range(999,100,-1):
+		if isPalindrome(i*j):
+			l.append(i*j)
 
+print max(l)
