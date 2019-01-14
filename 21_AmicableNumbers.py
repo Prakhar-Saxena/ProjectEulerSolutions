@@ -7,12 +7,6 @@ def listOfDivisors(n):
 			l.append(i)
 	return l
 
-def sumOfList(x):
-        sum = 0
-        for i in x:
-                sum += i
-        return sum
-
 def d(n):
 	l = listOfDivisors(n)
 	return sum(l)
@@ -25,7 +19,7 @@ def isAmicable(a,b):
 
 def listOfAmicableNumbers(n):
 	l = []
-	for a in range(1, n):
+	for a in range(1, n+1):
 		b = d(a)
 		if b < n and isAmicable(a, b):
 			l.append(a)
@@ -33,7 +27,5 @@ def listOfAmicableNumbers(n):
 	return l
 
 l = listOfAmicableNumbers(10000)
-print l
 
-sum = sumOfList(l)
-print sum
+print sum(l)/2 #did a /2 because I'm adding both a and b, therefore it'll be double
