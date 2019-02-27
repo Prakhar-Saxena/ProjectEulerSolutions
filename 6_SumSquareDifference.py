@@ -15,7 +15,6 @@ arrSq = []
 
 for i in arr:
 	arrSq.append(square(i))
-print arrSq
 sum = (101*50)*(101*50)
 
 sumSq = add(arrSq)
