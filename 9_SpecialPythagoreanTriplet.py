@@ -20,8 +20,7 @@ for a in range(1, 1000):
 		cSq = (a*a) + (b*b)
 		c = math.sqrt(cSq)
 		if c % 1 == 0 and a + b + c == 1000:
-			print a, b, c, a + b + c
-			print "abc = ", a*b*c
+			print a*b*c
 			foundIt = True
 			break
 	if foundIt:
