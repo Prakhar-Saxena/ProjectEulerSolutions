@@ -30,5 +30,5 @@ while len(primes) <= 10001:
 		primes.append(i)
 	i += 1
 
-print("10001st prime number is: " + str(primes[n-1]))
+print str(primes[n-1])
 
