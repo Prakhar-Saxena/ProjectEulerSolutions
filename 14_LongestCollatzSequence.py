@@ -14,10 +14,12 @@ def chainLen(x):
 		return 1 + chainLen(next)
 
 maxLen = 1
+num = 0
 
 for i in range(1, 1000000):
-	cl = chainLen(i)
+	cl = chainLen(i) + 1
 	if cl > maxLen:
 		maxLen = cl
+		num = i
 
-print maxLen
+print num
